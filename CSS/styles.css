@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Zeus";
+  src: url("../Font/Norse-Bold.otf") format("opentype");
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", "sans-serif";
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  background-image: url("../images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 30%;
+  color: hsl(0deg, 0%, 91%);
+}
+aside .zeus-image {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: hsla(0deg, 2%, 11%, 0.1);
+  font-size: 8rem;
+  margin-top: 18rem;
+}
+aside .zeus-image span {
+  font-family: "Zeus";
+}
+aside .atribution {
+  margin-top: 25rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

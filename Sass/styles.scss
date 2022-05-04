@@ -1,0 +1,33 @@
+@use 'default' as *;
+@use 'variables' as *;
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    background-image: url('../images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+    color: $aside-font-color;
+
+    .zeus-image {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: hsla(0, 2%, 11%, 0.1);
+        font-size: 8rem;
+        margin-top: 18rem;
+        span {
+            font-family: 'Zeus';
+        }
+    }
+
+    .atribution {
+        margin-top: 25rem;
+        text-align: center;
+    }
+}
+
+
