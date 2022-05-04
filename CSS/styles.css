@@ -19,7 +19,7 @@ aside {
   background-image: url("../images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg");
   background-size: cover;
   height: 100%;
-  width: 50%;
+  width: 80vw;
   color: hsl(0deg, 0%, 91%);
 }
 aside .zeus-image {
@@ -49,19 +49,30 @@ main .intro {
 main .intro p:nth-child(2) {
   margin-top: 2rem;
 }
-main h1 {
-  padding-left: 1.5rem;
-}
 main .container {
-  display: flex;
-  padding: 1rem 1.5rem;
-  column-gap: 20px;
-  flex-wrap: wrap;
-  width: 50%;
+  padding: 1rem 5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  line-height: 25px;
 }
-main .container label {
+main .container h1 {
+  margin-bottom: 1rem;
+}
+main .container .widget-container {
+  display: flex;
+  column-gap: 150px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  width: 90%;
+}
+main .container .widget-container label {
   font-weight: 300;
   color: hsl(0deg, 0%, 20%);
+}
+main .container .widget-container input {
+  border-radius: 2px;
+  border: 2px solid hsl(60deg, 1%, 66%);
+  height: 30px;
+  width: 350px;
 }
 main .below-container {
   background-color: hsl(0deg, 0%, 95%);

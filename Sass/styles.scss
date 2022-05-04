@@ -10,7 +10,7 @@ aside {
     background-image: url('../images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg');
     background-size: cover;
     height: 100%;
-    width: 50%;
+    width: 80vw;
     color: $aside-font-color;
 
     .zeus-image {
@@ -44,21 +44,35 @@ main {
         }
     }
 
-    h1 {
-        padding-left: 1.5rem;
-    }
 
     .container {
-        display: flex;
-        padding: 1rem 1.5rem;
-        column-gap: 20px;
-        flex-wrap: wrap;
-        width: 50%;
-        
-        label {
-            font-weight: 300;
-            color: $label-font-color
+        padding: 1rem 5rem;
+        box-shadow: $box-shadow;
+
+        h1 {
+            margin-bottom: 1rem;
         }
+        
+        .widget-container {
+            display: flex;
+            column-gap: 150px;
+            row-gap: 20px;
+            flex-wrap: wrap;
+            width: 90%;
+
+            label {
+                font-weight: 300;
+                color: $label-font-color
+            }
+
+            input {
+                border-radius: 2px;
+                border: 2px solid hsl(60, 1%, 66%);
+                height: 30px;
+                width: 350px;
+            }
+        }
+        line-height: 25px;
     }
 
     .below-container {
