@@ -39,19 +39,20 @@ aside .atribution {
 
 main {
   height: 100%;
+  background-color: hsl(0deg, 0%, 95%);
 }
 main .intro {
   font-size: 1.7rem;
   font-weight: 600;
-  background-color: hsl(0deg, 0%, 95%);
   padding: 6rem 5rem;
 }
 main .intro p:nth-child(2) {
   margin-top: 2rem;
 }
 main .container {
-  padding: 1rem 5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 1rem 5rem 2rem 5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: white;
   line-height: 25px;
 }
 main .container h1 {
@@ -75,7 +76,24 @@ main .container .widget-container input {
   width: 350px;
 }
 main .below-container {
-  background-color: hsl(0deg, 0%, 95%);
+  padding: 3rem 5rem 1rem 5rem;
+  height: 100%;
+}
+main .below-container button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(231deg, 24%, 43%);
+  font-size: 1.5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  color: hsl(0deg, 0%, 91%);
+}
+main .below-container p {
+  margin-top: 1rem;
+}
+main .below-container p a:link, main .below-container p a:visited {
+  color: hsl(231deg, 24%, 43%);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

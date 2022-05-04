@@ -32,11 +32,11 @@ aside {
 
 main {
     height: 100%;
+    background-color: $greyish-background;
     .intro {
         //box-sizing: content-box;
         font-size: 1.7rem;
         font-weight: 600;
-        background-color: $greyish-background;
         padding: 6rem 5rem;
 
         p:nth-child(2) {
@@ -46,8 +46,9 @@ main {
 
 
     .container {
-        padding: 1rem 5rem;
+        padding: 1rem 5rem 2rem 5rem;
         box-shadow: $box-shadow;
+        background-color: white;
 
         h1 {
             margin-bottom: 1rem;
@@ -76,8 +77,32 @@ main {
     }
 
     .below-container {
-        background-color: $greyish-background;
-        //height: 30%;
+        padding: 3rem 5rem 1rem 5rem;
+        height: 100%;
+        
+        button {
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            border: none;
+            background-color: $button-color;
+            font-size: 1.5rem;
+            box-shadow: $box-shadow;
+            color: $aside-font-color;
+        }
+
+        p {
+            margin-top: 1rem;
+
+            a {
+                &:link {
+                    color: $button-color;
+                    text-decoration: none;
+                }
+                &:visited {
+                    @extend :link;
+                }
+            }
+        }
     }
 }
 
