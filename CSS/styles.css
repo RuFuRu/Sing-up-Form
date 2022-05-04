@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 @font-face {
   font-family: "Zeus";
   src: url("../Font/Norse-Bold.otf") format("opentype");
@@ -48,6 +48,20 @@ main .intro {
 }
 main .intro p:nth-child(2) {
   margin-top: 2rem;
+}
+main h1 {
+  padding-left: 1.5rem;
+}
+main .container {
+  display: flex;
+  padding: 1rem 1.5rem;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  width: 50%;
+}
+main .container label {
+  font-weight: 300;
+  color: hsl(0deg, 0%, 20%);
 }
 main .below-container {
   background-color: hsl(0deg, 0%, 95%);

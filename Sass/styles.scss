@@ -44,8 +44,21 @@ main {
         }
     }
 
+    h1 {
+        padding-left: 1.5rem;
+    }
+
     .container {
-        //height: 25%;
+        display: flex;
+        padding: 1rem 1.5rem;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        width: 50%;
+        
+        label {
+            font-weight: 300;
+            color: $label-font-color
+        }
     }
 
     .below-container {
