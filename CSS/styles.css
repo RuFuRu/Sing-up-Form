@@ -19,7 +19,7 @@ aside {
   background-image: url("../images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg");
   background-size: cover;
   height: 100%;
-  width: 30%;
+  width: 50%;
   color: hsl(0deg, 0%, 91%);
 }
 aside .zeus-image {
@@ -35,6 +35,22 @@ aside .zeus-image span {
 aside .atribution {
   margin-top: 25rem;
   text-align: center;
+}
+
+main {
+  height: 100%;
+}
+main .intro {
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 6rem 5rem;
+}
+main .intro p:nth-child(2) {
+  margin-top: 2rem;
+}
+main .below-container {
+  background-color: hsl(0deg, 0%, 95%);
 }
 
 /*# sourceMappingURL=styles.css.map */

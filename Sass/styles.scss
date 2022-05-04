@@ -10,7 +10,7 @@ aside {
     background-image: url('../images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg');
     background-size: cover;
     height: 100%;
-    width: 30%;
+    width: 50%;
     color: $aside-font-color;
 
     .zeus-image {
@@ -30,4 +30,27 @@ aside {
     }
 }
 
+main {
+    height: 100%;
+    .intro {
+        //box-sizing: content-box;
+        font-size: 1.7rem;
+        font-weight: 600;
+        background-color: $greyish-background;
+        padding: 6rem 5rem;
+
+        p:nth-child(2) {
+            margin-top: 2rem;
+        }
+    }
+
+    .container {
+        //height: 25%;
+    }
+
+    .below-container {
+        background-color: $greyish-background;
+        //height: 30%;
+    }
+}
 
