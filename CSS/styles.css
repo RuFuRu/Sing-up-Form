@@ -11,21 +11,111 @@
   outline: none;
 }
 
+@media (max-width: 1570px) {
+  .intro p {
+    font-size: 80%;
+  }
+
+  input {
+    width: 200px !important;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    margin-bottom: 4rem;
+  }
+
+  .below-container {
+    padding: 2rem 5rem 1rem 5rem;
+  }
+}
+@media (max-width: 1250px) {
+  .zeus-image {
+    font-size: 6.7rem !important;
+  }
+
+  aside {
+    width: 85vw !important;
+  }
+}
+@media (max-width: 1135px) {
+  body {
+    flex-direction: column;
+  }
+  body aside {
+    height: 40vh;
+    width: 100% !important;
+  }
+  body aside .zeus-image {
+    margin-top: 6rem;
+    justify-content: center;
+    column-gap: 60px;
+  }
+  body aside .atribution {
+    margin-top: 4.5rem;
+  }
+  body main input {
+    width: 300px !important;
+  }
+  body main .container {
+    margin-bottom: 2.5rem !important;
+  }
+  body main .below-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body main .below-container button {
+    font-size: 1.7rem;
+  }
+  body main .below-container .break {
+    width: 100%;
+    display: block !important;
+  }
+}
+@media (max-width: 999px) {
+  body main .widget-container {
+    column-gap: 70px !important;
+  }
+  body main input {
+    width: 200px !important;
+  }
+}
+@media (max-width: 690px) {
+  body main .widget-container {
+    column-gap: 20px !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    height: 140vh !important;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    height: 170vh !important;
+  }
+}
 body {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 aside {
   background-image: url("../images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg");
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   width: 80vw;
   color: hsl(0deg, 0%, 91%);
 }
 aside .zeus-image {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background-color: hsla(0deg, 2%, 11%, 0.1);
   font-size: 8rem;
   margin-top: 18rem;
@@ -37,9 +127,12 @@ aside .atribution {
   margin-top: 25rem;
   text-align: center;
 }
-
+aside .atribution a:link, aside .atribution main .below-container p a:visited, main .below-container p aside .atribution a:visited, aside .atribution a:visited {
+  color: hsl(231deg, 26%, 61%);
+  text-decoration: none;
+}
 main {
-  height: 100%;
+  height: 100vh;
   background-color: hsl(0deg, 0%, 95%);
 }
 main .intro {
@@ -107,6 +200,15 @@ main .below-container button {
 }
 main .below-container p {
   margin-top: 1rem;
+}
+main .below-container p a {
+  /*&:link {
+      color: $button-color;
+      text-decoration: none;
+  }
+  &:visited {
+      @extend :link;
+  }*/
 }
 main .below-container p a:link, main .below-container p a:visited {
   color: hsl(231deg, 24%, 43%);

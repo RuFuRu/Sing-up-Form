@@ -1,0 +1,110 @@
+@media (max-width: 1570px) {
+    .intro {
+        p {
+            font-size: 80%;
+        }
+    }
+
+    input {
+        width: 200px !important;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        margin-bottom: 4rem;
+    }
+
+    .below-container {
+        padding: 2rem 5rem 1rem 5rem;
+    }
+
+    .zeus-image {
+        //font-size: 7rem !important;
+    }
+}
+
+@media (max-width: 1250px) {
+    .zeus-image {
+        font-size: 6.7rem !important;
+    }
+
+    aside {
+        width: 85vw !important;
+    }
+}
+@media (max-width: 1135px) {
+    body {
+        flex-direction: column;
+        aside {
+            height: 40vh;
+            width: 100% !important;
+            .zeus-image {
+                margin-top: 6rem;
+                justify-content: center;
+                column-gap: 60px;
+            }
+            .atribution {
+                margin-top: 4.5rem;
+            }
+        }
+        main {
+            input {
+                width: 300px !important;
+            }
+            .container {
+                margin-bottom: 2.5rem !important;
+            }
+            .below-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                button {
+                    font-size: 1.7rem;
+                }
+                .break {
+                    width: 100%;
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    body {
+        main {
+            .widget-container {
+                column-gap: 70px !important;
+            }
+            input {
+                width: 200px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    body {
+        main {
+            .widget-container {
+                column-gap: 20px !important;
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        height: 140vh !important;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        height: 170vh !important;
+    }
+}
