@@ -3,11 +3,12 @@
   font-family: "Zeus";
   src: url("../Font/Norse-Bold.otf") format("opentype");
 }
-*, *::after, *::before {
+*, *::after, *::before, *:focus {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Ubuntu", "sans-serif";
+  outline: none;
 }
 
 body {
@@ -56,7 +57,7 @@ main .container {
   line-height: 25px;
 }
 main .container h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 main .container .widget-container {
   display: flex;
@@ -74,6 +75,10 @@ main .container .widget-container input {
   border: 2px solid hsl(60deg, 1%, 66%);
   height: 30px;
   width: 350px;
+}
+main .container .widget-container input:focus {
+  border: 2px solid hsl(219deg, 50%, 50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 main .below-container {
   padding: 3rem 5rem 1rem 5rem;

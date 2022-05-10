@@ -51,7 +51,7 @@ main {
         background-color: white;
 
         h1 {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
         
         .widget-container {
@@ -71,6 +71,11 @@ main {
                 border: 2px solid hsl(60, 1%, 66%);
                 height: 30px;
                 width: 350px;
+
+                &:focus {
+                    border: 2px solid hsl(219, 50%, 50%);
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
             }
         }
         line-height: 25px;

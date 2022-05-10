@@ -5,9 +5,10 @@
     src: url('../Font/Norse-Bold.otf') format('opentype');
 }
 
-*,*::after,*::before {
+*,*::after,*::before, *:focus {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', 'sans-serif';
+    outline: none;
 }
