@@ -60,6 +60,7 @@ main {
             row-gap: 20px;
             flex-wrap: wrap;
             width: 90%;
+            position: relative;
 
             label {
                 font-weight: 300;
@@ -74,7 +75,23 @@ main {
 
                 &:focus {
                     border: 2px solid hsl(219, 50%, 50%);
-                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    box-shadow: $input-subtle-box-shadow;
+                }
+
+            }
+
+            .error {
+                border: 2px solid $error-color;
+                box-shadow: $input-subtle-box-shadow;
+            }
+
+            .div-error {
+                &::before {
+                    content: "* Passwords don't match!";
+                    position: absolute;
+                    top: 205px;
+                    font-weight: 500;
+                    color: $error-color;
                 }
             }
         }

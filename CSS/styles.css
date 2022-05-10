@@ -65,6 +65,7 @@ main .container .widget-container {
   row-gap: 20px;
   flex-wrap: wrap;
   width: 90%;
+  position: relative;
 }
 main .container .widget-container label {
   font-weight: 300;
@@ -79,6 +80,17 @@ main .container .widget-container input {
 main .container .widget-container input:focus {
   border: 2px solid hsl(219deg, 50%, 50%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main .container .widget-container .error {
+  border: 2px solid hsl(0deg, 78%, 47%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+main .container .widget-container .div-error::before {
+  content: "* Passwords don't match!";
+  position: absolute;
+  top: 205px;
+  font-weight: 500;
+  color: hsl(0deg, 78%, 47%);
 }
 main .below-container {
   padding: 3rem 5rem 1rem 5rem;
