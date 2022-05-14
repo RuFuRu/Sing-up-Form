@@ -55,13 +55,13 @@
     column-gap: 60px;
   }
   body aside .atribution {
-    margin-top: 4.5rem;
+    margin-top: 2.5rem !important;
   }
   body main input {
     width: 300px !important;
   }
   body main .container {
-    margin-bottom: 2.5rem !important;
+    margin-bottom: 0.4rem !important;
   }
   body main .below-container {
     display: flex;
@@ -77,6 +77,12 @@
   }
 }
 @media (max-width: 999px) {
+  body {
+    height: 115vh !important;
+  }
+  body main {
+    height: 115vh !important;
+  }
   body main .widget-container {
     column-gap: 70px !important;
   }
@@ -84,7 +90,10 @@
     width: 200px !important;
   }
 }
-@media (max-width: 690px) {
+@media (max-width: 750px) {
+  body main {
+    height: 140vh !important;
+  }
   body main .widget-container {
     column-gap: 20px !important;
     width: 100% !important;
@@ -98,6 +107,33 @@
 @media (max-width: 450px) {
   main {
     height: 170vh !important;
+  }
+}
+@media (max-height: 1550px) {
+  aside .atribution {
+    margin-top: 23rem !important;
+  }
+}
+@media (max-height: 1300px) {
+  aside .atribution {
+    margin-top: 20rem !important;
+  }
+
+  main .container {
+    margin-bottom: 1rem !important;
+  }
+}
+@media (max-height: 1000px) {
+  body {
+    height: 110vh !important;
+  }
+
+  main {
+    height: 110vh !important;
+  }
+
+  aside {
+    height: 100% !important;
   }
 }
 body {
